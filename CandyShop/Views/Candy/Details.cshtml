@@ -1,0 +1,12 @@
+﻿@model Candy
+
+<h1>@Model.Name</h1>
+
+<div class="thumbnail">
+    <img alt="@Model.Name" src="@Model.ImageUrl" />
+    <div class="caption-full">
+        <h3 class="pull-right">@Model.Price</h3>
+        <h3><a href="#">@Model.Name</a></h3>
+        <p>@Model.Description</p>
+    </div>
+</div>
