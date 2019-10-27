@@ -9,6 +9,14 @@
     <Compile Remove="Migrations\20191022015506_InitialMigration.Designer.cs" />
     <Compile Remove="Migrations\20191024010342_AddingShoppingCart.cs" />
     <Compile Remove="Migrations\20191024010342_AddingShoppingCart.Designer.cs" />
+    <Compile Remove="Migrations\20191026174705_unbind.cs" />
+    <Compile Remove="Migrations\20191026174705_unbind.Designer.cs" />
+    <Compile Remove="Migrations\20191026182828_newTables.cs" />
+    <Compile Remove="Migrations\20191026182828_newTables.Designer.cs" />
+    <Compile Remove="Migrations\20191026183358_newTables.cs" />
+    <Compile Remove="Migrations\20191026183358_newTables.Designer.cs" />
+    <Compile Remove="Migrations\20191026183905_OrderAndOrderDetails.cs" />
+    <Compile Remove="Migrations\20191026183905_OrderAndOrderDetails.Designer.cs" />
   </ItemGroup>
 
   <ItemGroup>
