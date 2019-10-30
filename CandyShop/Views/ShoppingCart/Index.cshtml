@@ -4,6 +4,7 @@
 <table class="table table-bordered table-striped">
     <thead>
         <tr>
+            <th>&nbsp;</th>
             <th>Selected Amount</th>
             <th>Candy</th>
             <th class="text-right">Price</th>
@@ -14,6 +15,7 @@
         @foreach(var item in Model.ShoppingCart.ShoppingCartItems)
         {
         <tr>
+            <td class="text-left"><a asp-controller="ShoppingCart" asp-action="RemoveFromShoppingCart" asp-route-candyId="@item.Candy.CandyId" alt="">Decrease Amount</a></td>
             <td class="text-center">@item.Amount</td>
             <td class="text-left">@item.Candy.Name</td>
             <td class="text-right">@item.Candy.Price.ToString("c")</td>
@@ -25,12 +27,13 @@
     </tbody>
     <tfoot>
         <tr>
-        <td colspan="3" class="text-right">Total</td>
+        <td colspan="4" class="text-right">Total</td>
         <td class="text-right">@Model.ShoppingCartTotal.ToString("c")</td>
     </tr>
     </tfoot>
 </table>
 
 <div class="text-center">
+    <a class="btn btn-primary" asp-controller="ShoppingCart" asp-action="ClearCart">Clear Cart</a>
     <a class="btn btn-primary" asp-controller="Order" asp-action="Checkout">Checkout</a>
 </div>

@@ -55,5 +55,11 @@ namespace CandyShop.Controllers
 
             return RedirectToAction("Index");
         }
+
+        public RedirectToActionResult ClearCart()
+        {
+            _shoppingCart.ClearCart();
+            return RedirectToAction("Index");
+        }
     }
 }
